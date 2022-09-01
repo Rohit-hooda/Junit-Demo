@@ -6,8 +6,10 @@ class mathTest {
 
     @Test
     void add() {
-        System.out.println("Add class test case");
-//        fail("This failed");
+        math math = new math();
+        int expected = 2;
+        int actual = math.add(1,1);
+        assertEquals(expected, actual, "The add method should add two numbers correctly");
 
     }
 }
